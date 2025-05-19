@@ -1,0 +1,30 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ConfigurableMetasoundMixer",
+	"Description": "Metasound Mixer (and maybe other nodes in the future) that uses the 5.6 node configuration option",
+	"Category": "Audio",
+	"CreatedBy": "Amir Ben-Kiki",
+	"CreatedByURL": "https://github.com/Amir-BK",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ConfigurableMetasoundMixer",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "Metasound",
+			"Enabled": true
+		}
+	]
+}
