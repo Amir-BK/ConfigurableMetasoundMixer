@@ -3,8 +3,6 @@
 #pragma once
 
 
-#include "Runtime/Launch/Resources/Version.h"
-
 
 #include "MetasoundOperatorData.h"
 #include "MetasoundFrontendDocument.h"
@@ -25,7 +23,7 @@ struct FConfigurableMixerConfiguration  :public FMetaSoundFrontendNodeConfigurat
 
 	UPROPERTY(EditAnywhere, Category = General, meta = (DisplayName = "Equal Power Panning Law"))
 	bool bEqualPower;
-#if (ENGINE_MAJOR_VERSION >= 5) && (ENGINE_MINOR_VERSION >= 6)	//this entire class is only available in 5.6 and up
+
 	FConfigurableMixerConfiguration();
 
 	/* Get the current interface for the class based upon the node extension */
@@ -33,7 +31,6 @@ struct FConfigurableMixerConfiguration  :public FMetaSoundFrontendNodeConfigurat
 
 	///* Pass data down to the operator. */
 	virtual TSharedPtr<const Metasound::IOperatorData> GetOperatorData() const override;
-#endif
 
 };
 
