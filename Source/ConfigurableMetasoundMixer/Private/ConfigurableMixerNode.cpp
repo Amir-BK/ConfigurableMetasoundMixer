@@ -38,6 +38,7 @@ namespace Metasound::ConfigurableMixerPrivate
 	const FText OutputTooltip = LOCTEXT("OutCh_Tooltip", "Channel");
 
 #else
+	const FText OutputTooltip = FText::GetEmpty();
 	const FText InputTooltip = FText::GetEmpty();
 #endif
 	
